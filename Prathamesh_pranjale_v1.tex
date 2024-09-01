@@ -1,0 +1,243 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% Adjusted for dot bullet points
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[left=0pt, label={\tiny$\bullet$}, labelsep=1em, itemsep=0mm, noitemsep]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[left=0pt, label={\tiny$\bullet$}, labelsep=1em, itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[left=0pt, label={\tiny$\bullet$}, labelsep=1em, itemsep=0mm, noitemsep]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+% \newcommand{\name}{Prathamesh Pranjale} % Your Name
+
+% \newcommand{\phone}{xxxxxxxxxx} % Your Phone Number
+% \newcommand{\emaila}{youremail@email.com} %Email 1
+% \newcommand{\emailb}{officialemail@iiitkota.ac.in} %Email 2
+
+% \documentclass[a4paper,11pt]{article}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\pagestyle{empty}
+\renewcommand{\labelitemi}{\textbullet} % Use bullet point as dot
+
+% Custom itemize settings
+\newlist{myitemize}{itemize}{1}
+\setlist[myitemize,1]{left=0pt, label={\textbullet}, labelsep=1em, itemsep=0mm, noitemsep}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\parbox{\dimexpr\linewidth-0.75cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\Large Prathamesh Pranjale} & \raisebox{0.0\height}{\footnotesize \faPhone} +91-7028092060 \\
+  \textbf{\Large Software Engineer} & \href{mailto:prathameshpranjale777@gmail.com}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ prathameshpranjale777@gmail.com} \\
+  & \href{https://github.com/prathameshpranjale}{\raisebox{0.0\height}{\footnotesize \faGithub}\ github.com/prathameshpranjale} \\
+  & \href{https://www.linkedin.com/in/prathamesh-pranjale-18929b218/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ linkedin.com/in/prathamesh-pranjale}
+\end{tabularx}
+}
+
+
+\vspace{-8mm}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\noindent
+\textbf{Pimpri Chinchwad College of Engineering, Pune} \hfill \textit{Graduation Year: 2024} \\
+\textit{B.Tech in Electronics and Tele-Communication Engineering} \hfill \textit{CGPA: 8.96} \\
+\textit{Minor in Software Engineering} \hfill \textit{CGPA: 8.55} \\
+\vspace{-2mm}
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+\noindent
+\textbf{Rudder Analytics Private Limited, Pune} \\
+\textit{Associate Analyst} \hspace{9.2cm} \textit{December 18, 2023 – May 17, 2024} \\
+\vspace{-3mm}
+\begin{itemize}[left=0pt, label={\textbullet}, labelsep=1em, itemsep=0mm, noitemsep]
+  \item Optimized database management and query performance with \textbf{MySQL}.
+  \item Executed ETL processes using \textbf{Python}, improving data workflow efficiency.
+  \item Developed and maintained \textbf{RESTful APIs} in \textbf{Python} for seamless integration.
+  \item Designed and deployed interactive dashboards using \textbf{Power BI}.
+  \item Implemented data storage, processing, and analytics solutions on \textbf{Google Cloud Platform (GCP)}.
+  \item Created actionable data visualizations and reports in \textbf{Tableau} for informed decision-making.
+\end{itemize}
+\vspace{-6mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\noindent
+\textbf{Image Captioning using Beam Search and Greedy Search} \\
+\vspace{-3mm}
+\begin{itemize}[left=0pt, label={\textbullet}, labelsep=1em, itemsep=0mm, noitemsep]
+  \item Implemented an image captioning model with InceptionV3 and deep learning techniques.
+  \item Developed caption prediction models using greedy and beam search algorithms.
+  \item Improved caption accuracy and descriptiveness.
+  \item \textbf{Tech stack: Python, Numpy, Pandas}
+\end{itemize}
+
+\vspace{-2.5mm} % Adjust this value to control space between projects
+
+\noindent
+\textbf{Backend Video Hosting Platform} \\
+\vspace{-3mm}
+\begin{itemize}[left=0pt, label={\textbullet}, labelsep=1em, itemsep=0mm, noitemsep]
+  \item Developed a comprehensive backend system with Node.js, Express.js, MongoDB, and Mongoose.
+  \item Implemented features like user authentication, video upload, and engagement actions.
+  \item Ensured secure authentication and token management.
+  \item Gained experience in scalable backend solutions.
+  \item \textbf{Tech stack: Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt}
+\end{itemize}
+
+\vspace{-2.5mm} % Adjust this value to control space between projects
+
+\noindent
+\textbf{Drone-based Surveillance System for Port Areas} \\
+\vspace{-3mm}
+\begin{itemize}[left=0pt, label={\textbullet}, labelsep=1em, itemsep=0mm, noitemsep]
+  \item Designed a drone-based system to monitor vessels and detect encroachments.
+  \item Integrated cameras for real-time streaming and used YOLO for person detection.
+  \item Enhanced surveillance with advanced detection algorithms.
+  \item \textbf{Tech stack: Python, Ubuntu, YOLO, Jetson Nano, TensorFlow}
+\end{itemize}
+\vspace{-6mm}
+
+%-----------Technical Skills and Interests-----------------
+\section{\textbf{Technical Skills and Interests}}
+\begin{description}[left=0pt, labelsep=1em, itemsep=0mm, noitemsep]
+    \item[\textbf{Programming Languages:}] C++, Java, Python, JavaScript, Node.js
+    \item[\textbf{Developer Tools:}] VS Code, GitHub, Git, Postman
+    \item[\textbf{Frameworks and Libraries:}] Express.js, Mongoose, React
+    \item[\textbf{Cloud Platforms and Databases:}] Google Cloud Platform (GCP), MongoDB, SQL
+    \item[\textbf{Software Development:}] Backend Development, RESTful APIs, JWT, Object-Oriented Programming, \newline Data Structures, Algorithms
+    \item[\textbf{Soft Skills:}] Problem Solving, Communication, Team Collaboration
+    \item[\textbf{Areas of Interest:}] Software Engineering, Backend Development, Web Development, Machine Learning
+\end{description}
+
+\vspace{-7mm}
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\begin{description}[left=0pt, labelsep=1em, itemsep=0mm, noitemsep]
+    \item[\textbf{Led Team in Smart India Hackathon:}] Successfully led a team to build a student study portal.
+    \item[\textbf{GeeksforGeeks:}] Solved over 500 questions, demonstrating strong problem-solving skills.
+    \item[\textbf{LeetCode:}] Achieved a 1480 rating by solving over 200 coding problems.
+    \item[\textbf{Certification in Data Structures:}] Demonstrated proficiency in key algorithms.
+    \item[\textbf{HackerRank Certifications:}] Earned certifications in Problem Solving and SQL, showcasing advanced problem-solving and database query skills.
+\end{description}
+\vspace{-7mm}
+
+
+\end{document}
